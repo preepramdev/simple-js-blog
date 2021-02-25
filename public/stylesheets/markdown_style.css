@@ -1,0 +1,27 @@
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+pre > code {
+  font-family: monospace;
+  padding: 0px 5px;
+  border: none;
+}
+
+pre {
+  padding: 0px 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #fafafa;
+  overflow-x: scroll;
+}
+
+code {
+  font-family: monospace;
+  padding: 0px 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}

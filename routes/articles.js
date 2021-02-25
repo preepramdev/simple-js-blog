@@ -15,6 +15,7 @@ router.get('/:slug', async (req, res) => {
     try {
         const article = await Article.findOne({ slug: req.params.slug });
         if (article === null) res.redirect('/');
+        console.log(article);
         res.render('articles/show', { article: article });
     } catch (error) {
         res.redirect('/');

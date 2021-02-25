@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 const Article = require('./models/article');
@@ -14,7 +15,7 @@ mongoose.connect('mongodb://localhost/blog', {
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: false }));
-
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
 app.get('/', async (req, res) => {
